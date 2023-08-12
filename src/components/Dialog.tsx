@@ -1,7 +1,7 @@
 import { useRef, FormEventHandler, PropsWithChildren } from 'react';
 import './Dialog.css';
 
-interface DialogProps<T = boolean> {
+interface DialogProps {
   open?: boolean;
   onClose: () => void;
   onSubmit?: FormEventHandler<HTMLDialogElement>;

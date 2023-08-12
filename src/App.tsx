@@ -22,10 +22,15 @@ function App() {
       <div className="card">
         <button onClick={() => setDialogOpen(true)}>Open dialog</button>
       </div>
-      <Dialog open={dialogOpen} onClose={() => setDialogOpen(false)}>
-        <p>Dialog text here...</p>
+      <Dialog
+        open={dialogOpen}
+        onClose={() => setDialogOpen(false)}
+        onSubmit={console.log}
+      >
+        <p>Choose a username:</p>
         <input name="username" type="text" />
-        <button>OK</button>
+        <button value="cancel">Cancel</button>
+        <button>Confirm</button>
       </Dialog>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
