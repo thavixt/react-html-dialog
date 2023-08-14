@@ -14,13 +14,23 @@
 }
 .Dialog {
   background: black;
-  padding: 8px;
+  padding: 16px 24px;
   min-width: 200px;
   border-radius: 16px;
   box-shadow: 5px 5px 20px -3px rgba(0, 0, 0, 1);
 }
 
 .Dialog form {
+  /*display: flex;
+  flex-direction: column;
+  gap: 8px;*/
+}
+.Dialog label,
+.Dialog input {
+  display: inline-block;
+}
+.Dialog .Dialog__buttonContainer {
+  margin-top: 16px;
   display: flex;
   flex-direction: column;
   gap: 8px;
